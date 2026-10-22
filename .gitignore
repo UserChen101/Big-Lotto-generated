@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 构建产物
+build/
+dist/
+*.spec.bak
+
+# 运行期缓存
+.pagesmith/
+.pdfstudio/
+*.log
+
+# 工作区本地数据
+.workbuddy/
+
+# 系统杂项
+Thumbs.db
+desktop.ini

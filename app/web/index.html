@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>页匠</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ─────────────────────────── 顶栏 ─────────────────────────── -->
+  <header class="topbar">
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" fill="currentColor" opacity=".14"/>
+        <path d="M14 2v5h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M8.5 16.5h7M8.5 12.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span>页匠</span><span class="brand-en">PageSmith</span>
+    </div>
+
+    <div class="tools" id="toolbar">
+      <button class="btn" data-act="open" title="打开 PDF　Ctrl+O">
+        <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+        <span>打开</span>
+      </button>
+      <button class="btn" data-act="save" title="保存　Ctrl+S" disabled>
+        <svg viewBox="0 0 24 24"><path d="M5 3h11l3 3v15H5Z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
+        <span>保存</span>
+      </button>
+
+      <span class="sep"></span>
+
+      <div class="seg" id="tool-mode">
+        <button class="seg-btn active" data-tool="select" title="选择文字 (V)">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 7-6 1.6L10.6 18Z"/></svg>
+        </button>
+        <button class="seg-btn" data-tool="hand" title="拖动画布 (H)">
+          <svg viewBox="0 0 24 24"><path d="M8 12V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V12m0-1a1.5 1.5 0 0 1 3 0v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6v-4a1.5 1.5 0 0 1 3 0"/></svg>
+        </button>
+        <button class="seg-btn" data-tool="annotate" title="批注框 (N)">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z"/><path d="M8 9h8M8 12.5h5"/></svg>
+        </button>
+      </div>
+
+      <span class="sep"></span>
+
+      <button class="btn icon-only" data-act="zoom-out" title="缩小　Ctrl+-">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg>
+      </button>
+      <button class="zoom-label" id="zoom-label" title="点击输入缩放比例">100%</button>
+      <button class="btn icon-only" data-act="zoom-in" title="放大　Ctrl++">
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <button class="btn icon-only" data-act="fit-width" title="适应宽度">
+        <svg viewBox="0 0 24 24"><path d="M3 6v12M21 6v12M7 12h10M7 12l2.5-2.5M7 12l2.5 2.5M17 12l-2.5-2.5M17 12l-2.5 2.5"/></svg>
+      </button>
+      <button class="btn icon-only" data-act="fit-page" title="整页显示">
+        <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+      </button>
+
+      <span class="sep"></span>
+
+      <button class="btn" data-act="rotate" title="顺时针旋转 90°" disabled>
+        <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></svg>
+      </button>
+      <button class="btn" id="btn-edit-text" data-act="edit-text" title="编辑文字（修改 / 删除 / 新增）" disabled>
+        <svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6.5 16 12 4l5.5 12"/><path d="M8.6 12h6.8"/></svg>
+        <span>编辑文字</span>
+      </button>
+
+      <div class="menu-wrap">
+        <button class="btn has-caret" data-menu="pages" disabled>
+          <span>页面</span>
+          <svg class="caret" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+        </button>
+        <div class="menu" data-menu-for="pages">
+          <button data-act="delete-pages" disabled>删除选中页…</button>
+          <button data-act="extract-pages" disabled>提取选中页…</button>
+          <button data-act="reverse" disabled>反转页面顺序</button>
+          <div class="menu-sep"></div>
+          <button data-act="insert-pdf" disabled>插入其他 PDF…</button>
+          <button data-act="insert-images" disabled>插入图片…</button>
+          <button data-act="blank-page" disabled>在末尾加空白页</button>
+          <div class="menu-sep"></div>
+          <button data-act="split" disabled>按页拆分…</button>
+          <button data-act="merge" disabled>合并多个 PDF…</button>
+        </div>
+      </div>
+
+      <div class="menu-wrap">
+        <button class="btn has-caret" data-menu="convert" disabled>
+          <span>转换</span>
+          <svg class="caret" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+        </button>
+        <div class="menu" data-menu-for="convert">
+          <button data-act="to-docx" disabled>导出为 Word (.docx)</button>
+          <button data-act="to-xlsx" disabled>导出表格为 Excel (.xlsx)</button>
+          <button data-act="to-images" disabled>导出为图片…</button>
+          <button data-act="to-html" disabled>导出为网页 (.html)</button>
+          <button data-act="to-txt" disabled>导出纯文本 (.txt)</button>
+          <div class="menu-sep"></div>
+          <button data-act="images-to-pdf">图片合成 PDF…</button>
+          <button data-act="docx-to-pdf">Word 转 PDF…</button>
+        </div>
+      </div>
+
+      <div class="menu-wrap">
+        <button class="btn has-caret" data-menu="opt" disabled>
+          <span>优化</span>
+          <svg class="caret" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+        </button>
+        <div class="menu" data-menu-for="opt">
+          <button data-act="compress" disabled>压缩文件体积…</button>
+          <button data-act="ocr" disabled>OCR 文字识别…</button>
+          <div class="menu-sep"></div>
+          <button data-act="watermark" disabled>添加水印…</button>
+          <button data-act="encrypt" disabled>设置密码…</button>
+          <button data-act="decrypt" disabled>移除密码…</button>
+          <div class="menu-sep"></div>
+          <button data-act="props" disabled>文档属性…</button>
+        </div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <button class="btn icon-only" data-act="search" title="搜索　Ctrl+F" disabled>
+        <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      </button>
+      <button class="btn icon-only" data-act="print" title="打印　Ctrl+P" disabled>
+        <svg viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="7" rx="1.5"/><path d="M7 16h10v5H7z"/></svg>
+      </button>
+      <button class="btn icon-only" data-act="export-annot" title="导出注释清单" disabled>
+        <svg viewBox="0 0 24 24"><path d="M5 4h9l5 5v11H5Z"/><path d="M9 12h6M9 15.5h4"/></svg>
+      </button>
+      <div class="menu-wrap">
+        <button class="btn icon-only" data-menu="more" title="更多">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="18.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+        </button>
+        <div class="menu menu-right" data-menu-for="more">
+          <button data-act="save-as">另存为…</button>
+          <button data-act="reveal">在资源管理器中显示</button>
+          <button data-act="open-external">用系统默认程序打开</button>
+          <div class="menu-sep"></div>
+          <button data-act="about">关于 页匠</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─────────────────────────── 主体 ─────────────────────────── -->
+  <div class="body">
+
+    <!-- 左侧栏 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="side-tabs">
+        <button class="side-tab active" data-panel="thumbs">页面</button>
+        <button class="side-tab" data-panel="outline">目录</button>
+        <button class="side-tab" data-panel="annots">批注 <em id="annot-count">0</em></button>
+      </div>
+
+      <div class="side-panel active" data-panel="thumbs">
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <div class="side-panel" data-panel="outline">
+        <div class="outline" id="outline"><p class="empty-hint">此文档没有书签目录</p></div>
+      </div>
+
+      <div class="side-panel" data-panel="annots">
+        <div class="annot-list" id="annot-list"><p class="empty-hint">还没有批注</p></div>
+      </div>
+    </aside>
+
+    <div class="resizer" id="resizer"></div>
+
+    <!-- 阅读区 -->
+    <main class="viewer-wrap" id="viewer-wrap">
+
+      <!-- 欢迎页 -->
+      <div class="welcome" id="welcome">
+        <div class="welcome-inner">
+          <div class="welcome-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M14 2v5h5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h1>打开一个 PDF 开始</h1>
+          <p>阅读、批注、编辑页面、格式转换、OCR —— 全都在本地完成，文件不出这台电脑。</p>
+          <div class="welcome-actions">
+            <button class="btn-primary" data-act="open">选择文件</button>
+            <button class="btn-ghost" data-act="merge">合并多个 PDF</button>
+          </div>
+          <div class="recent" id="recent"></div>
+        </div>
+      </div>
+
+      <!-- 连续滚动页面容器 -->
+      <div class="pages" id="pages" hidden>
+        <div class="pages-inner" id="pages-inner"></div>
+      </div>
+
+      <!-- 拖放提示 -->
+      <div class="dropzone" id="dropzone"><div>松手即可打开 PDF</div></div>
+
+      <!-- 浮动文字工具条 -->
+      <div class="float-toolbar" id="float-toolbar">
+        <button data-fmt="highlight" title="高亮 (Ctrl+H)"><span class="swatch" style="background:#ffe066"></span>高亮</button>
+        <button data-fmt="underline" title="下划线"><span class="swatch" style="background:#3b82f6"></span>下划线</button>
+        <button data-fmt="strikeout" title="删除线"><span class="swatch" style="background:#ef4444"></span>删除线</button>
+        <button data-fmt="note" title="添加批注"><span class="swatch" style="background:#f59e0b"></span>批注</button>
+        <span class="ft-sep"></span>
+        <button data-fmt="copy" title="复制文字">复制</button>
+      </div>
+
+      <!-- 搜索栏 -->
+      <div class="searchbox" id="searchbox" hidden>
+        <input type="text" id="search-input" placeholder="在文档中搜索…" autocomplete="off">
+        <span class="search-count" id="search-count"></span>
+        <button class="btn icon-only" id="search-prev" title="上一个"><svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"/></svg></button>
+        <button class="btn icon-only" id="search-next" title="下一个"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+        <button class="btn icon-only" id="search-close" title="关闭"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+
+      <!-- 文字编辑工具条 -->
+      <div class="editbar" id="editbar" hidden>
+        <button class="btn" id="edit-add" title="点击后在页面上放置新文字">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>添加文字</span>
+        </button>
+        <span class="sep"></span>
+        <label class="edit-field">字体
+          <select id="edit-font"></select>
+        </label>
+        <label class="edit-field">字号
+          <input type="number" id="edit-size" min="4" max="300" step="0.5" value="14">
+        </label>
+        <label class="edit-field">颜色
+          <input type="color" id="edit-color" value="#111111">
+        </label>
+        <div class="seg" id="edit-dir">
+          <button class="seg-btn active" data-dir="h" title="正向">正向</button>
+          <button class="seg-btn" data-dir="r" title="反向（旋转 180°）">反向</button>
+          <button class="seg-btn" data-dir="v" title="竖排（字头朝上）">竖向</button>
+        </div>
+        <span class="sep"></span>
+        <button class="btn" id="edit-undo" title="撤销上一次编辑 (Ctrl+Z)">
+          <svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg><span>撤销</span>
+        </button>
+        <button class="btn btn-primary" id="edit-done">完成</button>
+      </div>
+
+      <!-- 加载遮罩 -->
+      <div class="loading" id="loading" hidden>
+        <div class="spinner"></div>
+        <p id="loading-text">正在处理…</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- ─────────────────────────── 状态栏 ─────────────────────────── -->
+  <footer class="statusbar">
+    <span id="st-page">— / —</span>
+    <span class="dot"></span>
+    <span id="st-size">—</span>
+    <span class="dot"></span>
+    <span id="st-file">未打开文件</span>
+    <span class="spacer"></span>
+    <span id="st-dirty" class="dirty-flag" hidden>有未保存的修改</span>
+    <span id="st-hint"></span>
+  </footer>
+</div>
+
+<!-- ─────────────────────────── 弹窗 ─────────────────────────── -->
+<div class="modal-mask" id="modal-mask" hidden>
+  <div class="modal" id="modal">
+    <div class="modal-head"><h3 id="modal-title">标题</h3><button class="btn icon-only" id="modal-close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-foot" id="modal-foot"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<!-- 缩略图右键菜单 -->
+<div class="menu ctx-menu" id="thumb-menu" hidden>
+  <button data-thumb-act="rotate-cw">顺时针旋转</button>
+  <button data-thumb-act="rotate-ccw">逆时针旋转</button>
+  <div class="menu-sep"></div>
+  <button data-thumb-act="extract">提取此页…</button>
+  <button data-thumb-act="delete">删除此页</button>
+  <div class="menu-sep"></div>
+  <button data-thumb-act="select-all">全选页面</button>
+  <button data-thumb-act="clear-sel">取消选择</button>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
