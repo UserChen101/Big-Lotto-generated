@@ -1,0 +1,27 @@
+[pdfstudio] 预打开: sample/产品需求说明书.pdf
+[pdfstudio] http://127.0.0.1:41247/  debug=False smoke=True
+[http] 127.0.0.1 "GET / HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /css/app.css HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/app.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/viewer.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/dialog.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/pdf.mjs HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /favicon.ico HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/pdf.worker.mjs HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /doc.pdf?t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/0?w=164&t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/1?w=164&t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/2?w=164&t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/3?w=164&t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/4?w=164&t=1-44ba1541 HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/cmaps/UniGB-UTF16-H.bcmap HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap HTTP/1.1" 200 -
+[smoke] {"title": "产品需求说明书.pdf — PDF Studio", "topbar": true, "thumbs": 5, "pages": 2, "canvases": 2, "overlayHidden": true, "text": "PDF Studio 打开 保存 172% 编辑文字 页面 转换 优化 页面 目录 批注 0 1 2 3 4 5 PRODUCT SPEC 产品需求说明书 PDF Studio 桌面端 · v1.0 文档编号 SPEC-2026-1021 编写人 松子蟹 版本 1.0 / 2026-10-21 本文档描述 PDF Studio 桌面端的功能范围与技术实现方案。 目标是提供一套可替代 Adobe Acrobat 日常使用的本地工具， 覆盖阅读、批注、页面编排、格式转换与 OCR"}
+[smoke-step] start
+[smoke-step] more-menu
+[smoke-step] edit-mode
+[smoke-step] edit-apply
+[smoke-step] wm-menu
+[smoke-ui] {"fontsCall": "OK {\"ok\":true,\"data\":[{\"id\":\"msyh\",\"label\":\"微软雅黑\"},{\"id\":\"simsun\",\"label\":\"宋体\"},{\"id\":\"simhei\",\"label\":\"黑体\"},{\"id\":\"simk", "moreMenuOpens": true, "moreMenuCloses": true, "editbarVisible": true, "editSpans": 41, "inlineEditor": true, "editApplied": true, "editSpansAfterRerender": 41, "wmDialogOpen": false}
+[smoke] watermark dialog on screen
+[smoke] stay=1，窗口保持打开

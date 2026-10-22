@@ -1,0 +1,18 @@
+[pdfstudio] 预打开: sample/产品需求说明书.pdf
+[pdfstudio] http://127.0.0.1:38038/  debug=False smoke=False
+[http] 127.0.0.1 "GET / HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /css/app.css HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/app.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/viewer.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /js/dialog.js HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/pdf.mjs HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /favicon.ico HTTP/1.1" 404 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/pdf.worker.mjs HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /doc.pdf?t=1-d396027c HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/0?w=164&t=1-d396027c HTTP/1.1" 200 -[http] 127.0.0.1 "GET /api/thumb/1?w=164&t=1-d396027c HTTP/1.1" 200 -
+
+[http] 127.0.0.1 "GET /api/thumb/2?w=164&t=1-d396027c HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/3?w=164&t=1-d396027c HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /api/thumb/4?w=164&t=1-d396027c HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/cmaps/UniGB-UTF16-H.bcmap HTTP/1.1" 200 -
+[http] 127.0.0.1 "GET /vendor/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap HTTP/1.1" 200 -

@@ -1,0 +1,569 @@
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2026 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2026 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.7.3
+Non-commercial use only
+
+Preprocessing
+   Reading file: C:\Users\Chen\.pdfstudio\tools\innosetup\ISPPBuiltins.iss
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 35
+Parsing [Setup] section, line 36
+Parsing [Setup] section, line 37
+Parsing [Setup] section, line 38
+Parsing [Setup] section, line 40
+Parsing [Setup] section, line 41
+Reading file (LicenseFile)
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Verification successful
+   Updating icons (Setup.e32)
+   Updating version info (Setup.e32)
+Determining language code pages
+Parsing [Languages] section, line 44
+   Reading file: C:\Users\Chen\.pdfstudio\tools\innosetup\Default.isl
+Parsing [Languages] section, line 45
+   Reading file: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\ChineseSimplified.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 44
+   Reading file: C:\Users\Chen\.pdfstudio\tools\innosetup\Default.isl
+Parsing [Languages] section, line 45
+   Reading file: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\ChineseSimplified.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 48
+Parsing [Tasks] section, line 49
+Parsing [Icons] section, line 55
+Parsing [Icons] section, line 56
+Parsing [Icons] section, line 57
+Parsing [Icons] section, line 58
+Parsing [UninstallDelete] section, line 65
+Parsing [Run] section, line 61
+Parsing [Files] section, line 52
+Deleting PDFStudioSetup-1.0.0.exe from output directory
+Creating setup files
+   Verification successful
+   Updating icons (Setup.exe)
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\PDFStudio.exe
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\base_library.zip
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\libcrypto-3-x64.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\libffi-8.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\libssl-3-x64.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\msvcp140.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\MSVCP140_1.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pyexpat.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\python3.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\python313.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\select.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\unicodedata.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\vcruntime140.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\vcruntime140_1.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_asyncio.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_bz2.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_cffi_backend.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_ctypes.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_decimal.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_elementtree.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_hashlib.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_lzma.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_multiprocessing.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_overlapped.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_queue.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_socket.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_ssl.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_uuid.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\_wmi.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\favicon.ico
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\index.html
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\css\app.css
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\js\app.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\js\dialog.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\js\viewer.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\pdf.mjs
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\pdf.worker.mjs
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78ms-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\78ms-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\83pv-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90ms-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90ms-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90msp-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90msp-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90pv-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\90pv-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Add-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Add-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Add-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Add-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-0.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-1.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-3.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-4.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-5.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-6.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-CNS1-UCS2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-0.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-1.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-3.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-4.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-5.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-GB1-UCS2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-0.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-1.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-3.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-4.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-5.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-6.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Japan1-UCS2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Korea1-0.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Korea1-1.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Korea1-2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Adobe-Korea1-UCS2.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\B5pc-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\B5pc-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS1-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS1-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS2-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\CNS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETen-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETen-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETenms-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETenms-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETHK-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\ETHK-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Ext-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Ext-RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Ext-RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Ext-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GB-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GB-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GB-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GB-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBK-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBK-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBK2K-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBK2K-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBKp-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBKp-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBpc-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBpc-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBT-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBT-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBT-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBT-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBTpc-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\GBTpc-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Hankaku.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Hiragana.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKdla-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKdla-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKdlb-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKdlb-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKgccs-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKgccs-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKm314-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKm314-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKm471-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKm471-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKscs-B5-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\HKscs-B5-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Katakana.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-Johab-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-Johab-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCms-UHC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCms-UHC-HW-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCms-UHC-HW-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCms-UHC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCpc-EUC-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\KSCpc-EUC-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\NWP-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\NWP-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\RKSJ-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\RKSJ-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\Roman.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UCS2-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UCS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF16-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF16-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF8-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniCNS-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UCS2-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UCS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF16-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF16-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF8-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniGB-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UCS2-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UCS2-HW-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UCS2-HW-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UCS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF16-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF16-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF8-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF16-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF16-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF8-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJIS2004-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISPro-UCS2-HW-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISPro-UCS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISPro-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISX0213-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISX0213-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISX02132004-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniJISX02132004-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UCS2-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UCS2-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF16-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF16-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF32-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF32-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF8-H.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\UniKS-UTF8-V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\V.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\cmaps\WP-Symbol.bcmap
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitDingbats.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitFixed.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitFixedBold.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitFixedBoldItalic.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitFixedItalic.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitSerif.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitSerifBold.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitSerifBoldItalic.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitSerifItalic.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\FoxitSymbol.pfb
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LiberationSans-Bold.ttf
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LiberationSans-BoldItalic.ttf
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LiberationSans-Italic.ttf
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LiberationSans-Regular.ttf
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LICENSE_FOXIT
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\app\web\vendor\pdfjs\standard_fonts\LICENSE_LIBERATION
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\config-3.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\config.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\cv2.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\load_config_py3.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\opencv_videoio_ffmpeg500_64.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\version.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\data\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\mat_wrapper\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\misc\version.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\misc\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\typing\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\cv2\utils\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\py.typed
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-comments.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-footer.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-header.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-settings.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-styles.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default.docx
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\[Content_Types].xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\customXml\item1.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\customXml\itemProps1.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\customXml\_rels\item1.xml.rels
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\docProps\app.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\docProps\core.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\docProps\thumbnail.jpeg
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\document.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\fontTable.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\numbering.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\settings.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\styles.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\stylesWithEffects.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\webSettings.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\theme\theme1.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\word\_rels\document.xml.rels
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx\templates\default-docx-template\_rels\.rels
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf\convert.jxa
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\REQUESTED
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\docx2pdf-0.1.8.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\fontTools\misc\bezierTools.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\fontTools\varLib\iup.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\builder.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\etree.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\objectify.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\sax.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\_elementpath.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\html\diff.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\html\_difflib.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\rng\iso-schematron.rng
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\RNG2Schtrn.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\XSD2Schtrn.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_abstract_expand.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_dsdl_include.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_message.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_schematron_skeleton_for_xslt1.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\iso_svrl_for_xslt1.xsl
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\lxml\isoschematron\resources\xsl\iso-schematron-xslt1\readme.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\fft\_pocketfft_umath.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\linalg\_umath_linalg.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\bit_generator.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\mtrand.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_bounded_integers.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_common.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_generator.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_mt19937.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_pcg64.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_philox.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\random\_sfc64.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\_core\_multiarray_tests.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy\_core\_multiarray_umath.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\DELVEWHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\REQUESTED
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\LICENSE.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\ma\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\src\highway\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\src\multiarray\dragon4_LICENSE.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy-2.5.4.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy.libs\libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\numpy.libs\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\onnxruntime\capi\onnxruntime.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\onnxruntime\capi\onnxruntime_providers_shared.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\onnxruntime\capi\onnxruntime_pybind11_state.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\converter.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\main.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\algorithm.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\Block.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\Collection.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\constants.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\docx.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\Element.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\share.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\common\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\font\Fonts.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\font\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\gui\App.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\gui\MainFrame.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\gui\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\image\Image.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\image\ImageBlock.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\image\ImagesExtractor.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\image\ImageSpan.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\image\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\Blocks.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\Column.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\Layout.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\Section.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\Sections.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\layout\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\BasePage.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\Page.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\Pages.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\RawPage.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\RawPageFactory.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\RawPageFitz.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\page\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\shape\Path.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\shape\Paths.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\shape\Shape.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\shape\Shapes.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\shape\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\Border.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\Cell.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\Cells.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\Row.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\Rows.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\TableBlock.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\TablesConstructor.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\TableStructure.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\table\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\Char.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\Line.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\Lines.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\Spans.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\TextBlock.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\TextSpan.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx\text\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\REQUESTED
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\top_level.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pdf2docx-0.5.13.dist-info\licenses\LICENSE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_avif.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_imaging.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_imagingcms.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_imagingmath.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_imagingtk.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\PIL\_webp.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\psutil\_psutil_windows.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pyclipper\_pyclipper.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\extra.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\features.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\mupdf.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\mupdfcpp64.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\mupdf_info.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\py.typed
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\pymupdf.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\show_features.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\table.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\tgif.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\utils.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_apply_pages.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_build.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_extra.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_features.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_mupdf.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_table_headers.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_table_refine.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_table_spans.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_table_union.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_tgif.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\_wxcolors.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf\__main__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\COPYING
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\README.md
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\REQUESTED
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pymupdf-2.0.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pythonnet\runtime\Python.Runtime.deps.json
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pythonnet\runtime\Python.Runtime.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pythonnet\runtime\Python.Runtime.xml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pythonwin\win32ui.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pywin32_system32\pythoncom313.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\pywin32_system32\pywintypes313.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\config.yaml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\rapid_ocr_api.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\utils.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v2_cls\config.yaml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v2_cls\text_cls.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v2_cls\utils.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v2_cls\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_det\config.yaml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_det\text_detect.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_det\utils.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_det\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_rec\config.yaml
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_rec\text_recognize.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_rec\utils.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\ch_ppocr_v3_rec\__init__.py
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\models\ch_PP-OCRv3_det_infer.onnx
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\models\ch_PP-OCRv3_rec_infer.onnx
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime\models\ch_ppocr_mobile_v2.0_cls_infer.onnx
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\REQUESTED
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\top_level.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\rapidocr_onnxruntime-1.2.3.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\shapely\lib.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\shapely\_geometry_helpers.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\shapely\_geos.cp313-win_amd64.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\Shapely.libs\geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\Shapely.libs\geos_c-6dd9fd915eef8a7928285416bef1e666.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\Shapely.libs\msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\entry_points.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\INSTALLER
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\METADATA
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\RECORD
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\top_level.txt
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\WHEEL
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\tqdm-4.70.1.dist-info\licenses\LICENCE
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\api.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\customize.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\finish.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\state.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\lib\dom_json.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\js\lib\polyfill.js
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\pywebview-android.jar
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\WebBrowserInterop.x64.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\WebBrowserInterop.x86.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\win32\win32api.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\win32\win32event.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\win32\win32pdh.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\win32\win32trace.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\win32\_win32sysloader.pyd
+   Compressing: C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\installer\..\dist\PDFStudio\_internal\yaml\_yaml.cp313-win_amd64.pyd
+   Compressing Setup program executable
+   Updating version info (Setup.exe)
+   Updating manifest (Setup.exe)
+
+
+Successful compile (65.046 sec). Resulting Setup program filename is:
+C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\dist\PDFStudioSetup-1.0.0.exe

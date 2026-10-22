@@ -1,0 +1,130 @@
+71 DEPRECATION: Running PyInstaller as admin is not necessary nor sensible. Run PyInstaller from a non-administrator terminal. PyInstaller 7.0 will block this.
+413 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.9
+413 INFO: Python: 3.13.14
+439 INFO: Platform: Windows-11-10.0.26300-SP0
+440 INFO: Python environment: C:\Users\Chen\.workbuddy\binaries\python\envs\default
+450 INFO: Removing temporary files and cleaning cache in C:\Users\Chen\AppData\Local\pyinstaller
+C:\Users\Chen\.workbuddy\binaries\python\envs\default\Lib\site-packages\fitz\__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+13470 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\Chen\\WorkBuddy\\2026-10-21-16-24-26',
+ 'D:\\Program '
+ 'Files\\WorkBuddy\\resources\\app.asar.unpacked\\cli\\vendor\\shim',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\versions\\3.13.12\\python313.zip',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\versions\\3.13.12\\DLLs',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\versions\\3.13.12\\Lib',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\versions\\3.13.12',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\win32',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\win32\\lib',
+ 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\pythonwin',
+ 'C:\\Users\\Chen\\WorkBuddy\\2026-10-21-16-24-26']
+14936 INFO: Appending 'binaries' from .spec
+14936 INFO: Appending 'datas' from .spec
+14944 INFO: checking Analysis
+14945 INFO: Building Analysis because Analysis-00.toc is non existent
+14945 INFO: Looking for Python shared library...
+14945 INFO: Using Python shared library: C:\Users\Chen\.workbuddy\binaries\python\versions\3.13.12\python313.dll
+14945 INFO: Running Analysis Analysis-00.toc
+14945 INFO: Target bytecode optimization level: 0
+14945 INFO: Initializing module dependency graph...
+14948 INFO: Initializing module graph hook caches...
+14967 INFO: Analyzing modules for base_library.zip ...
+18781 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+18794 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+18898 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+21663 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+23035 INFO: Caching module dependency graph...
+23073 INFO: Analyzing C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\main.py
+23093 INFO: Processing standard module hook 'hook-webview.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\webview\\__pyinstaller'
+23179 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+23216 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+23222 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+23524 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+23937 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+24021 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+24671 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+24673 INFO: SetuptoolsInfo: initializing cached setuptools info...
+26746 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26888 INFO: Processing standard module hook 'hook-clr.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\pythonnet\\_pyinstaller'
+26915 INFO: Processing standard module hook 'hook-clr_loader.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+27026 INFO: Processing standard module hook 'hook-pycparser.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+27182 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+27467 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+29382 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+31078 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+31508 INFO: Processing standard module hook 'hook-psutil.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+32054 INFO: Processing standard module hook 'hook-onnxruntime.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+32168 INFO: Processing pre-safe-import-module hook 'hook-tensorflow.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\pre_safe_import_module'
+32227 INFO: Processing standard module hook 'hook-cv2.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+36433 INFO: Processing standard module hook 'hook-lxml.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+37677 INFO: Processing standard module hook 'hook-lxml.etree.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+39440 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+39557 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+40981 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+41798 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42145 INFO: Processing standard module hook 'hook-docx.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+43155 INFO: Processing standard module hook 'hook-openpyxl.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44198 INFO: Processing standard module hook 'hook-docx2pdf.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44215 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+44216 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+44216 INFO: Processing pre-safe-import-module hook 'hook-win32com.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\pre_safe_import_module'
+44926 INFO: Processing standard module hook 'hook-win32com.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44929 INFO: Processing standard module hook 'hook-pythoncom.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+45634 INFO: Processing standard module hook 'hook-pywintypes.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+46894 INFO: Analyzing hidden import 'rapidocr_onnxruntime.ch_ppocr_v2_cls'
+46902 INFO: Analyzing hidden import 'rapidocr_onnxruntime.ch_ppocr_v3_det'
+46959 INFO: Processing standard module hook 'hook-shapely.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+47147 INFO: Analyzing hidden import 'rapidocr_onnxruntime.ch_ppocr_v3_rec'
+47157 INFO: Analyzing hidden import 'pymupdf.__main__'
+47193 INFO: Analyzing hidden import 'pymupdf._tgif'
+47193 INFO: Analyzing hidden import 'pymupdf.layout.onnx.LayoutProbAnalyzer'
+47203 INFO: Analyzing hidden import 'pymupdf.mupdf_info'
+47206 INFO: Analyzing hidden import 'pymupdf.show_features'
+47212 INFO: Analyzing hidden import 'pymupdf.tgif'
+47218 INFO: Processing module hooks (post-graph stage)...
+47496 INFO: Processing standard module hook 'hook-lxml.isoschematron.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+47564 WARNING: Hidden import "pycparser.lextab" not found!
+47565 WARNING: Hidden import "pycparser.yacctab" not found!
+47910 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks'
+47958 INFO: Processing standard module hook 'hook-lxml.objectify.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+47971 INFO: Performing binary vs. data reclassification (384 entries)
+48171 INFO: Looking for ctypes DLLs
+48251 INFO: Analyzing run-time hooks ...
+48256 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+48259 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+48263 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+48266 INFO: Including run-time hook 'pyi_rth_pythoncom.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+48267 INFO: Including run-time hook 'pyi_rth_pywintypes.py' from 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\rthooks'
+48291 INFO: Creating base_library.zip...
+48317 INFO: Looking for dynamic libraries
+C:\Users\Chen\.workbuddy\binaries\python\envs\default\Lib\site-packages\fitz\__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+51931 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\cv2\\../../x64/vc17/bin', 'C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\shapely.libs']
+51931 INFO: Extra DLL search directories (PATH): ['C:\\Users\\Chen\\.workbuddy\\binaries\\python\\envs\\default\\Lib\\site-packages\\cv2\\../../x64/vc17/bin']
+53275 INFO: Warnings written to C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\build\PDFStudio\warn-PDFStudio.txt
+53359 INFO: Graph cross-reference written to C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\build\PDFStudio\xref-PDFStudio.html
+53429 INFO: checking PYZ
+53429 INFO: Building PYZ because PYZ-00.toc is non existent
+53429 INFO: Building PYZ (ZlibArchive) C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\build\PDFStudio\PYZ-00.pyz
+54498 INFO: Building PYZ (ZlibArchive) C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\build\PDFStudio\PYZ-00.pyz completed successfully.
+54529 INFO: checking PKG
+54529 INFO: Building PKG because PKG-00.toc is non existent
+54530 INFO: Building PKG (CArchive) PDFStudio.pkg
+54567 INFO: Building PKG (CArchive) PDFStudio.pkg completed successfully.
+54569 INFO: Bootloader C:\Users\Chen\.workbuddy\binaries\python\envs\default\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+54569 INFO: checking EXE
+54569 INFO: Building EXE because EXE-00.toc is non existent
+54569 INFO: Building EXE from EXE-00.toc
+54569 INFO: Copying bootloader EXE to C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\build\PDFStudio\PDFStudio.exe
+54595 INFO: Copying icon to EXE
+54608 INFO: Copying 0 resources to EXE
+54609 INFO: Embedding manifest in EXE
+54622 INFO: Appending PKG archive to EXE
+54648 INFO: Fixing EXE headers
+54746 INFO: Building EXE from EXE-00.toc completed successfully.
+54752 INFO: checking COLLECT
+54752 INFO: Building COLLECT because COLLECT-00.toc is non existent
+54754 INFO: Removing dir C:\Users\Chen\WorkBuddy\2026-10-21-16-24-26\dist\PDFStudio
+[safe-delete][SAFE_DELETE_BULK_CONFIRM_REQUIRED] {"count":661,"threshold":50,"scope":"turn","targets":["C:\\Users\\Chen\\WorkBuddy\\2026-10-21-16-24-26\\dist\\PDFStudio"],"targetCount":1}
