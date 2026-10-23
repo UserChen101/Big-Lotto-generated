@@ -218,6 +218,7 @@ onefile 每次启动都要解压一遍，冷启动会多等好几秒。
 - 注意：核心文档引擎 **PyMuPDF 采用 AGPL-3.0**，以本应用形式对外分发时
   需遵守其条款（开源整个应用或购买商业授权）；pdf.js / RapidOCR / pdf2docx /
   openpyxl / pywebview 均为 Apache-2.0 或 MIT 等宽松许可
+- 若有其他问题，可邮箱发送至1534276291@qq.com
 
 ---
 
