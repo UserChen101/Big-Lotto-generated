@@ -224,6 +224,51 @@ def _smoke_probe(window) -> None:
         js("window.pywebview.api.fonts().then(r => window.__ft = 'OK ' + JSON.stringify(r)).catch(e => window.__ft = 'ERR ' + e)")
         time.sleep(2.5)
         report["fontsCall"] = str(js("window.__ft") or "PENDING")[:40]
+
+        # 0.5) 拖放打开：合成携带真实 PDF 字节的 DropEvent 派发到 document，
+        # 走完整「上传 → open_path → 渲染」链路（回归：2026-10 拖入打不开）。
+        # 副作用：后续菜单/编辑/水印步骤因此有了已打开的文档。
+        try:
+            import base64
+            import tempfile
+
+            tmp_pdf = Path(tempfile.gettempdir()) / "pagesmith_drop_test.pdf"
+            try:
+                import pymupdf as _fitz
+
+                _d = _fitz.open()
+                _d.new_page()
+                _d.save(str(tmp_pdf))
+                _d.close()
+            except Exception:  # noqa: BLE001 — 兜底：无 xref 的极简 PDF，MuPDF 可修复
+                tmp_pdf.write_bytes(
+                    b"%PDF-1.4\n"
+                    b"1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n"
+                    b"2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj\n"
+                    b"3 0 obj<</Type/Page/Parent 2 0 R/MediaBox[0 0 200 200]>>endobj\n"
+                    b"trailer<</Size 4/Root 1 0 R>>\n%%EOF"
+                )
+            b64 = base64.b64encode(tmp_pdf.read_bytes()).decode()
+            js(
+                "(async () => {"
+                f"const bin = atob('{b64}');"
+                "const arr = new Uint8Array(bin.length);"
+                "for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);"
+                "const file = new File([arr], 'drop_test.pdf', {type: 'application/pdf'});"
+                "const dt = new DataTransfer();"
+                "dt.items.add(file);"
+                "const ev = new DragEvent('drop', {bubbles: true, cancelable: true, dataTransfer: dt});"
+                "document.dispatchEvent(ev);"
+                "})()"
+            )
+            for _ in range(20):
+                time.sleep(0.5)
+                if js("document.querySelectorAll('.page-canvas').length"):
+                    break
+            report["dropOpensPdf"] = int(js("document.querySelectorAll('.page-canvas').length") or 0) > 0
+        except Exception as exc:  # noqa: BLE001
+            report["dropOpensPdf"] = f"ERR {exc!r}"
+
         # 1) 更多菜单
         js("document.querySelector('[data-menu=\"more\"]')?.click()")
         time.sleep(0.4)

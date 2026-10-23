@@ -1634,11 +1634,27 @@ function bindEvents() {
     if (!file) return;
     e.preventDefault();
     e.stopPropagation();
-    if (!file.name.toLowerCase().endswith('.pdf')) {
+    if (!/\.pdf$/i.test(file.name)) {
       toast('目前只支持拖入 PDF 文件', 'err');
       return;
     }
     await uploadAndOpen(file);
+  });
+
+  // 兜底：拖到窗口任意位置（顶栏/侧栏/缩略图区）也能打开，
+  // 并阻止 WebView2 的默认行为（导航到被拖入的文件）。
+  document.addEventListener('dragover', (e) => {
+    if (e.dataTransfer?.types?.includes('Files')) e.preventDefault();
+  });
+  document.addEventListener('drop', (e) => {
+    const file = e.dataTransfer?.files?.[0];
+    if (!file) return;
+    e.preventDefault();
+    if (!/\.pdf$/i.test(file.name)) {
+      toast('目前只支持拖入 PDF 文件', 'err');
+      return;
+    }
+    if (typeof uploadAndOpen === 'function') uploadAndOpen(file);
   });
 
   // 侧栏宽度拖拽
