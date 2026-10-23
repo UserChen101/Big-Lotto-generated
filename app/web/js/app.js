@@ -1102,7 +1102,7 @@ const ACTIONS = {
     title: '关于 页匠',
     body: `<div class="kv">
         <dt>名称</dt><dd>页匠 PageSmith</dd>
-        <dt>版本</dt><dd>1.0.0</dd>
+        <dt>版本</dt><dd>1.0.1</dd>
         <dt>渲染引擎</dt><dd>pdf.js（Firefox 同源）</dd>
         <dt>文档引擎</dt><dd>PyMuPDF / MuPDF</dd>
         <dt>界面</dt><dd>WebView2 + 原生桌面壳</dd>
