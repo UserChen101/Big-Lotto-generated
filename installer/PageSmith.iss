@@ -53,9 +53,25 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: "pdfassoc"; Description: "把页匠加入「默认 PDF 打开工具」候选列表"; GroupDescription: "PDF 文件关联："; Flags: unchecked
 
 [Files]
 Source: "..\dist\PageSmith\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+; 注册文件关联候选（全部 HKCU，无需管理员）：
+; * ProgId "PageSmith.pdf" 定义"用页匠打开 PDF"；
+; * Capabilities + RegisteredApplications 让页匠出现在 设置→默认应用 的应用列表；
+; * Windows 对 UserChoice 有哈希保护，安装器不能也不应静默抢默认 ——
+;   用户装完在 设置→默认应用 里点一下即可，或直接在软件「更多」菜单里设。
+[Registry]
+Root: HKCU; Subkey: "Software\Classes\PageSmith.pdf"; ValueType: string; ValueName: ""; ValueData: "页匠 PageSmith PDF 文档"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\Classes\PageSmith.pdf"; ValueType: string; ValueName: "FriendlyTypeName"; ValueData: "页匠 PageSmith PDF 文档"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\Classes\PageSmith.pdf\DefaultIcon"; ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\Classes\PageSmith.pdf\shell\open\command"; ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\PageSmith\Capabilities"; ValueType: string; ValueName: "ApplicationName"; ValueData: "页匠 PageSmith"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\PageSmith\Capabilities"; ValueType: string; ValueName: "ApplicationDescription"; ValueData: "轻量级 PDF 全能工具箱：阅读批注、文字编辑、格式转换、OCR、水印、压缩加密。"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\PageSmith\Capabilities\FileAssociations"; ValueType: string; ValueName: ".pdf"; ValueData: "PageSmith.pdf"; Flags: uninsdeletekey; Tasks: pdfassoc
+Root: HKCU; Subkey: "Software\RegisteredApplications"; ValueType: string; ValueName: "PageSmith"; ValueData: "Software\PageSmith\Capabilities"; Flags: uninsdeletevalue; Tasks: pdfassoc
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

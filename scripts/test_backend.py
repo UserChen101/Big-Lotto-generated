@@ -322,6 +322,25 @@ def main() -> int:
     # ── 上传
     check("POST /api/upload", lambda: _upload(base, sample))
 
+    # ── 文件关联（只测纯逻辑，不写真实注册表）
+    if sys.platform.startswith("win"):
+        from app.core import assoc as _assoc
+
+        def _check_assoc():
+            cmd = _assoc.open_command()
+            if getattr(sys, "frozen", False):
+                if sys.executable not in cmd or "%1" not in cmd:
+                    raise AssertionError(f"命令异常: {cmd}")
+            elif "main.py" not in cmd or "%1" not in cmd:
+                raise AssertionError(f"命令异常: {cmd}")
+            url = _assoc.settings_url()
+            if not url.startswith("ms-settings:defaultapps") or _assoc.APP_REG_NAME not in url:
+                raise AssertionError(f"深链异常: {url}")
+            return f"ok ({cmd[:40]}...)"
+
+        check("关联命令构造", _check_assoc)
+        check("关联状态读取", lambda: isinstance(_assoc.is_registered(), bool) and isinstance(_assoc.is_default(), bool))
+
     # ── 元数据 / 目录
     session.open(sample)
     check("设置元数据", lambda: session.set_metadata({"title": "测试标题"})["title"])

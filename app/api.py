@@ -28,6 +28,9 @@ from .core import edit as cedit
 from .core import ocr as cocr
 from .core.doc import DocumentSession
 
+if sys.platform.startswith("win"):
+    from .core import assoc as cassoc
+
 IS_WIN = sys.platform.startswith("win")
 IS_MAC = sys.platform == "darwin"
 
@@ -161,6 +164,54 @@ class Api:
         meta["ocr"] = cocr.available()
         self._push_recent(meta)
         return meta
+
+    # ---------------------------------------------------- 默认 PDF 打开工具
+
+    @action
+    def pdf_assoc_status(self) -> dict:
+        """查询当前关联状态：是否已注册进系统候选、是否已是默认。"""
+        if not IS_WIN:
+            return {"supported": False}
+        return {
+            "supported": True,
+            "registered": cassoc.is_registered(),
+            "is_default": cassoc.is_default(),
+        }
+
+    @action
+    def set_default_pdf_app(self) -> dict:
+        """注册进系统候选并尝试直接设为默认。
+
+        Windows 对 UserChoice 有哈希保护，不同版本策略不同：COM 直设
+        可能被拒。返回 applied=False 时前端自动打开系统设置页，
+        用户点一下「设为默认」即可（注册项已经就位，候选列表里就有页匠）。
+        """
+        if not IS_WIN:
+            raise RuntimeError("此功能仅支持 Windows")
+        cassoc.register()
+        applied = cassoc.try_set_default()
+        return {
+            "applied": applied,
+            "is_default": cassoc.is_default(),
+            "settings_url": None if applied else cassoc.settings_url(),
+        }
+
+    @action
+    def unset_default_pdf_app(self) -> dict:
+        """从系统候选里移除注册。若此前已是默认，系统会在下次打开时回退。"""
+        if not IS_WIN:
+            raise RuntimeError("此功能仅支持 Windows")
+        cassoc.unregister()
+        return {"removed": True}
+
+    @action
+    def open_settings_page(self) -> dict:
+        """打开系统「默认应用」设置页（ms-settings URI）。"""
+        if not IS_WIN:
+            raise RuntimeError("此功能仅支持 Windows")
+        os.startfile(cassoc.settings_url())  # noqa: S606 — 仅系统 URI，无注入面
+        return {"opened": True}
+
 
     @action
     def unlock(self, path: str, password: str) -> dict:

@@ -140,7 +140,7 @@ function syncChrome() {
   const has = !!state.meta && !state.meta.empty;
   $$('[data-act]').forEach((btn) => {
     const act = btn.dataset.act;
-    if (['open', 'merge', 'images-to-pdf', 'docx-to-pdf', 'more', 'about'].includes(act)) return;
+    if (['open', 'merge', 'images-to-pdf', 'docx-to-pdf', 'more', 'about', 'set-default-pdf', 'unset-default-pdf'].includes(act)) return;
     if (['zoom-in', 'zoom-out', 'fit-width', 'fit-page'].includes(act)) { btn.disabled = !has; return; }
     btn.disabled = !has;
   });
@@ -984,6 +984,59 @@ function renderRecent(list) {
 
 /* ───────────────────────────── 工具栏动作分发 ───────────────────────────── */
 
+/* ── 默认 PDF 打开工具 ── */
+
+async function refreshDefaultPdfMenu() {
+  // 「更多」菜单每次展开时同步两个按钮的显隐（二选一）
+  try {
+    const st = await call('pdf_assoc_status');
+    const isDefault = !!st.is_default;
+    const setBtn = $('#act-set-default-pdf');
+    const unsetBtn = $('#act-unset-default-pdf');
+    if (setBtn) setBtn.hidden = isDefault;
+    if (unsetBtn) unsetBtn.hidden = !isDefault;
+  } catch (e) { /* 状态获取失败时保持默认展示 */ }
+}
+
+async function doSetDefaultPdf() {
+  loading(true, '正在设置默认打开方式…');
+  try {
+    const r = await call('set_default_pdf_app');
+    if (r.is_default) {
+      toast('页匠已是默认 PDF 打开工具');
+      return;
+    }
+    if (r.applied) {
+      toast('已设为默认 PDF 打开工具');
+    } else {
+      // Windows 哈希保护：注册已就位，最后一步请用户在系统设置里点一下
+      openModal({
+        title: '最后一步',
+        body: `<p>已把页匠注册进系统「默认应用」列表。</p>
+          <p>设置窗口已自动打开，请：<br>
+          1. 在应用列表中找到「页匠 PageSmith」<br>
+          2. 点击它，再点「.pdf」旁的「设为默认」</p>
+          <p class="hint">只需设置一次，以后双击 PDF 都会用页匠打开。</p>`,
+        buttons: [
+          { label: '打开设置页', value: 'settings' },
+          { label: '知道了', primary: true, value: true },
+        ],
+      }).then((v) => {
+        if (v === 'settings') call('open_settings_page').catch(() => {});
+      });
+    }
+    refreshDefaultPdfMenu();
+  } catch (e) { toastErr(e); } finally { loading(false); }
+}
+
+async function doUnsetDefaultPdf() {
+  try {
+    await call('unset_default_pdf_app');
+    toast('已取消页匠的默认 PDF 关联注册');
+    refreshDefaultPdfMenu();
+  } catch (e) { toastErr(e); }
+}
+
 const ACTIONS = {
   open: doOpen,
   save: doSave,
@@ -1043,6 +1096,8 @@ const ACTIONS = {
   'export-annot': exportAnnotations,
   reveal: async () => { try { await call('reveal_in_explorer', ''); } catch (e) { toastErr(e); } },
   'open-external': async () => { try { await call('open_external', ''); } catch (e) { toastErr(e); } },
+  'set-default-pdf': doSetDefaultPdf,
+  'unset-default-pdf': doUnsetDefaultPdf,
   about: () => openModal({
     title: '关于 页匠',
     body: `<div class="kv">
@@ -1379,7 +1434,10 @@ function bindEvents() {
       const menu = document.querySelector(`.menu[data-menu-for="${name}"]`);
       const wasOpen = menu?.classList.contains('open');
       closeAllMenus();
-      if (!wasOpen && menu) menu.classList.add('open');
+      if (!wasOpen && menu) {
+        menu.classList.add('open');
+        if (name === 'more') refreshDefaultPdfMenu();
+      }
       return;
     }
     if (!e.target.closest('.menu')) closeAllMenus();

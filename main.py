@@ -157,6 +157,61 @@ def prepare_storage() -> str:
 
 _MUTEX_HANDLE = None
 
+_OPEN_EVENT_NAME = r"Local\PageSmith.OpenEvent.v1"
+_PENDING_OPEN = Path.home() / ".pagesmith" / "pending_open.json"
+
+
+def signal_existing_instance(pdf_path: str) -> None:
+    """已有实例在跑时：把文件路径落盘 + 触发命名事件，让旧窗口去打开。"""
+    try:
+        import json
+
+        _PENDING_OPEN.parent.mkdir(parents=True, exist_ok=True)
+        _PENDING_OPEN.write_text(json.dumps({"path": pdf_path}, ensure_ascii=False), encoding="utf-8")
+        if sys.platform.startswith("win"):
+            import ctypes.wintypes as wt
+
+            kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+            kernel32.CreateEventW.restype = wt.HANDLE
+            ev = kernel32.CreateEventW(None, False, False, _OPEN_EVENT_NAME)
+            kernel32.SetEvent(ev)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[warn] 转交文件失败: {exc}", flush=True)
+
+
+def watch_open_requests(window, api) -> None:
+    """守护线程：等待后续实例的打开请求（仅 Windows）。"""
+    if not sys.platform.startswith("win"):
+        return
+
+    def _loop() -> None:
+        import ctypes.wintypes as wt
+
+        kernel32 = ctypes.WinDLL("kernel32")
+        kernel32.CreateEventW.restype = wt.HANDLE
+        kernel32.WaitForSingleObject.restype = wt.DWORD
+        ev = kernel32.CreateEventW(None, False, False, _OPEN_EVENT_NAME)
+        if not ev:
+            return
+        while True:
+            if kernel32.WaitForSingleObject(ev, 0xFFFFFFFF) != 0:
+                continue
+            try:
+                import json
+
+                data = json.loads(_PENDING_OPEN.read_text(encoding="utf-8"))
+                path = data.get("path") or ""
+                if path and Path(path).exists():
+                    api._open(path)
+                    # 前端重启后 get_state 会拿到新文档；保留未保存编辑的
+                    # 精细刷新留待后续，reload 是当前最可靠的方式。
+                    window.evaluate_js("location.reload()")
+                    print(f"[pagesmith] 已转交打开: {path}", flush=True)
+            except Exception as exc:  # noqa: BLE001
+                print(f"[warn] 处理打开请求失败: {exc}", flush=True)
+
+    threading.Thread(target=_loop, daemon=True, name="open-request-watcher").start()
+
 
 def acquire_single_instance() -> bool:
     """命名互斥量做单实例保护。
@@ -278,6 +333,8 @@ def _smoke_probe(window) -> None:
         time.sleep(0.2)
         report["moreMenuCloses"] = not bool(js(
             "!!document.querySelector('.menu[data-menu-for=\"more\"]')?.classList.contains('open')"))
+        # 1c) 「设为默认 PDF 工具」菜单项必须存在（不真点，避免改用户注册表）
+        report["defaultPdfMenuItem"] = bool(js("!!document.getElementById('act-set-default-pdf')"))
 
         step("more-menu")
         # 1b) 页面 / 转换 / 优化 三个菜单触发器必须已启用并能打开
@@ -432,8 +489,12 @@ def _smoke_probe(window) -> None:
 
 
 def main() -> int:
+    cli_pdf = next((a for a in sys.argv[1:] if a.lower().endswith(".pdf") and Path(a).exists()), None)
+
     if not acquire_single_instance():
         print("[pagesmith] 已有一个实例在运行，本次启动退出。", flush=True)
+        if cli_pdf:
+            signal_existing_instance(cli_pdf)
         return 2
 
     session = DocumentSession()
@@ -454,13 +515,15 @@ def main() -> int:
     api._window = window
 
     # 命令行直接带文件打开（会话与窗口解耦，先后皆可）
-    cli_pdf = next((a for a in sys.argv[1:] if a.lower().endswith(".pdf") and Path(a).exists()), None)
     if cli_pdf:
         try:
             api._open(cli_pdf)
             print(f"[pagesmith] 预打开: {cli_pdf}", flush=True)
         except Exception as exc:  # noqa: BLE001
             print(f"[warn] 无法预打开 {cli_pdf}: {exc}", flush=True)
+
+    # 后续实例（双击 PDF）转交打开请求
+    watch_open_requests(window, api)
 
     debug = bool(os.environ.get("PDFSTUDIO_DEBUG"))
     smoke = bool(os.environ.get("PDFSTUDIO_SMOKE"))
